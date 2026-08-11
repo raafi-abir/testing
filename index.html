@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raafiqul Hasan - EEE Student & Academic Portfolio</title>
+    <meta name="description" content="Academic and personal portfolio of Raafiqul Hasan, Electrical and Electronics Engineering (EEE) student at University of Asia Pacific, Dhaka.">
+    <script src="/js/theme-init.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="antialiased">
+    <!-- Scroll Progress Indicator Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Sticky Navigation Header -->
+    <header class="site-header" id="top">
+        <div class="header-inner">
+            <div class="logo-area">
+                <h1>Raafiqul Hasan <span class="accent-dot"></span></h1>
+                <p class="subtitle">Electrical & Electronics Engineering Student</p>
+            </div>
+            
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                    <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+                    <li><a href="#skills"><i class="fas fa-bolt"></i> Skills</a></li>
+                    <li><a href="#lab-experience"><i class="fas fa-flask"></i> Labs</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-controls">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle Theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon" style="display: none;"></i>
+                </button>
+                <button id="menu-toggle" class="menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Drawer -->
+            <div id="mobile-nav" class="mobile-nav-panel">
+                <ul class="mobile-nav-list">
+                    <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                    <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+                    <li><a href="#skills"><i class="fas fa-bolt"></i> Skills</a></li>
+                    <li><a href="#lab-experience"><i class="fas fa-flask"></i> Labs</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="theme-wrapper">
+        <!-- Hero & Profile Section -->
+        <section id="home" class="content-section">
+            <div class="main-content">
+                <!-- Sidebar Profile -->
+                <aside class="sidebar glass-card reveal">
+                    <div class="profile-image-container">
+                        <div class="profile-image">
+                            <img src="/images/avatar.jpg" alt="Raafiqul Hasan">
+                        </div>
+                        <div class="status-badge" title="Open for Academic Collaboration">
+                            <span class="status-pulse"></span> EEE Student
+                        </div>
+                    </div>
+                    <h2>Raafiqul Hasan</h2>
+                    <p class="bio">EEE Student at <strong>University of Asia Pacific, Dhaka</strong>. Building core foundations in circuit design, semiconductors, engineering mathematics, and Linux systems tuning.</p>
+                    
+                    <div class="badge-row" style="margin-top: 16px; justify-content: center;">
+                        <span class="skill-tag"><i class="fas fa-map-marker-alt"></i> Dhaka, BD</span>
+                        <span class="skill-tag"><i class="fas fa-university"></i> UAP</span>
+                    </div>
+                </aside>
+
+                <!-- Hero Details & Interactive Terminal -->
+                <div class="hero-wrapper reveal">
+                    <div class="glass-card hero-header-card">
+                        <h1 class="hero-title">Engineering Systems from the <span class="highlight-text">Ground Up</span></h1>
+                        <p class="hero-subtitle">Passionate about semiconductor devices, mathematical physics, Laplace transforms, and low-level Linux performance tuning.</p>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-value">2nd Year</div>
+                                <div class="stat-label">Undergrad Level</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">4+</div>
+                                <div class="stat-label">Lab Studies</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">C & Py</div>
+                                <div class="stat-label">Code Basics</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">Linux</div>
+                                <div class="stat-label">System Kernel</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive CLI Terminal Widget -->
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-left">
+                                <span class="terminal-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </span>
+                                <span class="terminal-title">raafiqul@ee-workstation:~</span>
+                            </div>
+                            <div class="terminal-tabs">
+                                <button class="tab-btn active" data-tab="skills">skills.txt</button>
+                                <button class="tab-btn" data-tab="courses">courses.txt</button>
+                                <button class="tab-btn" data-tab="specs">specs.txt</button>
+                                <button class="tab-btn" data-tab="contact">contact.txt</button>
+                            </div>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line">
+                                <span class="prompt">$</span>
+                                <span class="command" id="terminal-cmd">cat skills.txt</span>
+                            </div>
+                            <div class="terminal-output" id="terminal-output"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="content-section reveal">
+            <h2><i class="fas fa-user-circle"></i> About Me</h2>
+            <div class="glass-card">
+                <p class="bio" style="font-size: 1.05rem; margin-bottom: 16px;">
+                    I'm an Electrical and Electronics Engineering (EEE) student at the <strong>University of Asia Pacific, Dhaka</strong>. My primary objective is building strong, rigorous analytical fundamentals across physical electronics, circuit theory, and engineering mathematics.
+                </p>
+                <p class="bio" style="font-size: 1.05rem;">
+                    Whether analyzing diode I-V characteristics in the physics lab, solving differential equations using Laplace Transforms, or tweaking kernel parameters on Linux systems, I enjoy understanding complex systems step-by-step. My long-term aspiration is to contribute as a strong engineer and academic researcher in EEE.
+                </p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="content-section reveal">
+            <h2><i class="fas fa-graduation-cap"></i> Education & Academic Standing</h2>
+            <div class="glass-card">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 12px;">
+                    <div>
+                        <h3>B.Sc. in Electrical and Electronics Engineering (EEE)</h3>
+                        <p style="color: var(--accent); font-weight: 500;"><i class="fas fa-university"></i> University of Asia Pacific, Dhaka, Bangladesh</p>
+                    </div>
+                    <span class="skill-tag" style="background: var(--accent-light); color: var(--accent); border-color: var(--accent);"><i class="fas fa-calendar"></i> 2nd Year Undergraduate</span>
+                </div>
+                <p style="margin-bottom: 16px;">Focusing on core coursework in Circuit Theory, Solid State Semiconductors, Advanced Differential Equations, and Applied Physics.</p>
+                
+                <h4 style="margin-top: 16px; margin-bottom: 8px;">Relevant Coursework:</h4>
+                <div class="badge-row">
+                    <span class="skill-tag"><i class="fas fa-bolt"></i> Circuit Analysis I & II</span>
+                    <span class="skill-tag"><i class="fas fa-microchip"></i> Semiconductor Devices</span>
+                    <span class="skill-tag"><i class="fas fa-square-root-alt"></i> ODE & Laplace Transform</span>
+                    <span class="skill-tag"><i class="fas fa-atom"></i> Engineering Physics</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section with Category Filtering & Interactive Diode Simulator -->
+        <section id="projects" class="content-section reveal">
+            <h2><i class="fas fa-code"></i> Engineering Projects & Case Studies</h2>
+            
+            <!-- Category Filter Bar -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All Studies</button>
+                <button class="filter-btn" data-filter="semiconductor">Semiconductors</button>
+                <button class="filter-btn" data-filter="math">Math & Modeling</button>
+                <button class="filter-btn" data-filter="linux">Linux Tuning</button>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="project-grid">
+                <article class="glass-card project-card reveal" data-category="semiconductor lab">
+                    <div>
+                        <p class="project-kicker">Case Study 01</p>
+                        <h3>Analysis of Rectifying and Zener Diode Characteristics</h3>
+                        <p><strong>Problem:</strong> Investigating experimental I-V response curves and practical applications of semiconductor diodes in rectification and voltage regulation.</p>
+                        <p><strong>Solution:</strong> Recorded voltage-current datapoints in the lab, plotted forward/reverse bias curves, and calculated Zener breakdown thresholds.</p>
+                    </div>
+                    <div class="badge-row">
+                        <span class="skill-tag"><i class="fas fa-microchip"></i> Semiconductor Devices</span>
+                        <span class="skill-tag"><i class="fas fa-plug"></i> Circuit Analysis</span>
+                        <span class="skill-tag"><i class="fas fa-flask"></i> Lab Work</span>
+                    </div>
+                </article>
+
+                <article class="glass-card project-card reveal" data-category="math">
+                    <div>
+                        <p class="project-kicker">Case Study 02</p>
+                        <h3>Mathematical Modeling using Laplace Transform</h3>
+                        <p><strong>Problem:</strong> Solving 2nd-order linear ordinary differential equations describing transient circuit responses and dynamic system models.</p>
+                        <p><strong>Solution:</strong> Formulated s-domain transfer functions, performed partial fraction expansions, and evaluated time-domain responses.</p>
+                    </div>
+                    <div class="badge-row">
+                        <span class="skill-tag"><i class="fas fa-calculator"></i> Laplace Transform</span>
+                        <span class="skill-tag"><i class="fas fa-square-root-alt"></i> Differential Equations</span>
+                        <span class="skill-tag"><i class="fas fa-project-diagram"></i> System Modeling</span>
+                    </div>
+                </article>
+
+                <article class="glass-card project-card reveal" data-category="linux">
+                    <div>
+                        <p class="project-kicker">Case Study 03</p>
+                        <h3>Linux System Optimization and Kernel Tuning</h3>
+                        <p><strong>Problem:</strong> Optimizing system responsiveness, resource allocation, and boot performance on Linux workstation environments.</p>
+                        <p><strong>Solution:</strong> Executed custom sysctl parameter tuning, zram swap compression, memory management configs, and shell automation scripts.</p>
+                    </div>
+                    <div class="badge-row">
+                        <span class="skill-tag"><i class="fab fa-linux"></i> Linux OS</span>
+                        <span class="skill-tag"><i class="fas fa-sliders-h"></i> System Configuration</span>
+                        <span class="skill-tag"><i class="fas fa-tachometer-alt"></i> Performance Tuning</span>
+                    </div>
+                </article>
+            </div>
+
+            <!-- NEW ELEMENT: Interactive Diode Circuit Simulator Playground -->
+            <div class="simulator-card reveal">
+                <div class="simulator-header">
+                    <h3><i class="fas fa-wave-square" style="color: var(--accent);"></i> Interactive Diode I-V Curve Simulator</h3>
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <label for="diodeTypeSelect" style="font-family: var(--font-mono); font-size: 0.8rem;">Diode Model:</label>
+                        <select id="diodeTypeSelect" style="background: var(--bg-tertiary); color: var(--text-primary); border: 1px solid var(--border); padding: 4px 10px; border-radius: var(--radius-sm); font-family: var(--font-mono); font-size: 0.8rem;">
+                            <option value="zener">Zener Diode (5.1V)</option>
+                            <option value="rectifier">PN Rectifier Diode (1N4007)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="simulator-grid">
+                    <div class="sim-controls">
+                        <div class="control-group">
+                            <label for="voltageSlider">
+                                <span>Applied Voltage (V):</span>
+                                <span id="voltageValue" style="color: var(--accent); font-weight: 700;">1.20 V</span>
+                            </label>
+                            <input type="range" id="voltageSlider" class="sim-slider" min="-10" max="3" step="0.05" value="1.2">
+                        </div>
+
+                        <div class="sim-metrics">
+                            <div class="metric-box">
+                                <div class="metric-val" id="currentValue">12.4 mA</div>
+                                <div class="metric-lbl">Diode Current (I)</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-val" id="diodeState" style="font-size: 0.9rem;">Forward Conduction</div>
+                                <div class="metric-lbl">Operating Region</div>
+                            </div>
+                        </div>
+                        <p style="font-size: 0.82rem; color: var(--text-muted);">Slide voltage from reverse breakdown (-10V) to forward bias (+3V) to visualize real-time current response on the I-V graph.</p>
+                    </div>
+
+                    <div class="canvas-container">
+                        <canvas id="diodeCanvas"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section with Visual Progress Fill Bars -->
+        <section id="skills" class="content-section reveal">
+            <h2><i class="fas fa-bolt"></i> Technical Skills & Competencies</h2>
+            <div class="skills-groups">
+                <article class="glass-card skill-group reveal">
+                    <h3>Electrical & Hardware</h3>
+                    <div class="progress-item">
+                        <div class="progress-header">
+                            <span>Circuit Analysis & Theorems</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill" data-pct="88%"></div></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-header">
+                            <span>Semiconductor Physics</span>
+                            <span>82%</span>
+                        </div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill" data-pct="82%"></div></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-header">
+                            <span>Lab Experimentation</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill" data-pct="85%"></div></div>
+                    </div>
+                </article>
+
+                <article class="glass-card skill-group reveal">
+                    <h3>Mathematics & Computation</h3>
+                    <div class="progress-item">
+                        <div class="progress-header">
+                            <span>Laplace Transform & ODE</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill" data-pct="85%"></div></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-header">
+                            <span>C Programming (Beginner)</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill" data-pct="65%"></div></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-header">
+                            <span>Python Basics</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill" data-pct="60%"></div></div>
+                    </div>
+                </article>
+
+                <article class="glass-card skill-group reveal">
+                    <h3>Systems & Tools</h3>
+                    <div class="progress-item">
+                        <div class="progress-header">
+                            <span>Linux System Configuration</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill" data-pct="90%"></div></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-header">
+                            <span>Kernel Exploration & Shell</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill" data-pct="75%"></div></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-header">
+                            <span>Git & Version Control</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill" data-pct="70%"></div></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Lab Experience Section -->
+        <section id="lab-experience" class="content-section reveal">
+            <h2><i class="fas fa-flask"></i> Laboratory & Hands-on Experience</h2>
+            <div class="project-grid">
+                <article class="glass-card project-card reveal">
+                    <h3>EEE Laboratory Practice</h3>
+                    <ul style="list-style-type: disc; padding-left: 20px; color: var(--text-secondary); margin-bottom: 16px;">
+                        <li>Verification of Ohm's Law and Kirchhoff's Voltage Law (KVL)</li>
+                        <li>I-V Characteristics of Rectifier and Zener Diodes</li>
+                        <li>Half-wave and Full-wave Bridge Rectifier Circuits</li>
+                    </ul>
+                    <div class="badge-row"><span class="skill-tag"><i class="fas fa-microchip"></i> Electronics Lab</span></div>
+                </article>
+
+                <article class="glass-card project-card reveal">
+                    <h3>Physics Laboratory Practice</h3>
+                    <ul style="list-style-type: disc; padding-left: 20px; color: var(--text-secondary); margin-bottom: 16px;">
+                        <li>Determination of Modulus of Rigidity (Oscillation Method)</li>
+                        <li>Determination of Acceleration due to Gravity using Compound Pendulum</li>
+                        <li>Galvanometer Resistance measurement via Half-Deflection Method</li>
+                    </ul>
+                    <div class="badge-row"><span class="skill-tag"><i class="fas fa-atom"></i> Physics Lab</span></div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact & Footer Section -->
+        <section id="contact" class="content-section contact-section reveal">
+            <h2><i class="fas fa-envelope"></i> Get In Touch</h2>
+            <p style="margin-bottom: 24px;">Always open for academic discussions, undergraduate research ideas, or engineering collaborations.</p>
+            
+            <div class="contact-links">
+                <button class="contact-link copy-email-btn" title="Click to copy email">
+                    <i class="fas fa-envelope"></i> raafiqulhasan756@gmail.com <i class="fas fa-copy" style="font-size: 0.8em; margin-left: 4px;"></i>
+                </button>
+                <a href="https://github.com/raafi-abir" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/raafiqul-hasan" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+
+            <p style="font-size: 0.9rem;">University of Asia Pacific, Dhaka, Bangladesh</p>
+            <p class="copyright">© <span class="current-year"></span> Raafiqul Hasan. Crafted with UI/UX Pro Max.</p>
+        </section>
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
